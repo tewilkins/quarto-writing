@@ -32,15 +32,15 @@
 
 6. Customizing and Extending Quarto
 
-	•	Custom Templates: Explain how to create and use custom templates for consistent formatting.
-	•	Extensions and Plugins: Highlight some popular Quarto extensions and plugins that can enhance functionality.
-	•	Advanced Formatting: Dive into advanced formatting options for styling text, code blocks, and more.
+Custom Templates: Explain how to create and use custom templates for consistent formatting.
+Formatting: Formatting options for styling text, code blocks, and more.
+	
 
 7. Best Practices and Tips
 
-	•	Organizing Project Files: Share tips on organizing Quarto project files for large documents like theses.
-	•	Collaboration: Discuss collaborative writing using Quarto, possibly with version control or cloud platforms like GitHub.
-	•	Troubleshooting Common Issues: Provide solutions to common issues that students might encounter while using Quarto.
+Organizing Project Files: Share tips on organizing Quarto project files for large documents like theses.
+Collaboration: Discuss collaborative writing using Quarto, possibly with version control or cloud platforms like GitHub.
+Troubleshooting Common Issues: Provide solutions to common issues that students might encounter while using Quarto.
 
 8. Resources and Further Learning
 

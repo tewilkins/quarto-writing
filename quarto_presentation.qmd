@@ -1,11 +1,13 @@
 ---
 title: "Writing and presenting research in Quarto"
 author: "Tom Wilkins"
-format: revealjs
+format: 
+  revealjs:
+    embed-resources: true
 editor: visual
 ---
 
-## What is Quarto? {.smaller}
+## What is Quarto? {.scrollable}
 
 -   Open-source scientific and technical publishing software seated.
 

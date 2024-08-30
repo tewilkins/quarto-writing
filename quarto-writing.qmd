@@ -1,6 +1,6 @@
 ---
-title: "Simulation"
-format: html
+title: "Quarto intro"
+format: docx
 editor: visual
 ---
 
@@ -38,7 +38,7 @@ The `echo: false` option disables the printing of code (only output is displayed
 Each chunk has executable options: <https://quarto.org/docs/computations/execution-options.html>
 
 | Option    | Description                                                                                                                                                                                       |
-|------------|------------------------------------------------------------|
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `eval`    | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
 | `echo`    | Include the source code in output                                                                                                                                                                 |
 | `output`  | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto’s standard enclosing markdown). |
