@@ -1,0 +1,119 @@
+---
+format: 
+  revealjs:
+    standalone: true
+    embed-resources: true
+    theme: simple
+    width: 1600
+    height: 900
+  # pptx: 
+  #   width: 1600
+  #   height: 900
+editor: visual
+output:
+  revealjs:
+    revealjs-presentation
+---
+
+##  {.smaller}
+
+::: columns
+::: {.column width="60%"}
+::: {layout="[[1], [33,33,33]]"}
+![](https://i.ibb.co/K7cvpnp/IMG-1281.jpg){height="300"} ![](https://i.ibb.co/Yymb8T8/IMG-1528.jpg){height="300"} ![](https://i.ibb.co/1qkjFBr/IMG-1302.jpg){height="300"}
+:::
+
+### Thomas Wilkins
+
+PhD student (December 2021 - Current)
+
+</br>
+
+#### Research interests
+
+-   Stream invertebrate ecology
+-   Modelling species' distributions
+
+Thesis: *Investigating macroinvertebrate responses to catchment-scale effects using DNA metabarcoding and species distribution models.*
+:::
+
+::: {.column width="40%"}
+![](https://i.ibb.co/Xk8QX5p/IMG-4995.jpg){fig-align="right" width="600"}
+:::
+:::
+
+##  {.smaller}
+
+::: columns
+::: {.column width="65%"}
+**Do species-level datasets identified with DNA-metabarcoding reveal patterns in macroinvertebrates not observed in family-level datasets?**
+
+</br>
+
+![](https://i.ibb.co/BgRrpzq/Screenshot-2024-06-12-at-1-01-29-PM.png){fig-align="left" width="1200"}
+:::
+
+::: {.column width="35%"}
+```{mermaid}
+%%| fig-responsive: false
+%%| fig-height: 7
+%%| fig-width: 5
+  flowchart TB
+    AF[Upstream\nForest cover] -->|positive response| F((Family:\nLeptoceridae))
+    linkStyle 0 color:green;
+    F --> |Different| C(Species #1:\nTriplectides\naustralicus)
+    linkStyle 1 color:red;
+    F -->|No response| A(Species #2:\nLectrides\nvarians)
+    linkStyle 2 color:orange;
+    F --> |Similar| B(Species #3:\nNotalina\nbifara)
+    linkStyle 3 color:green;
+
+
+
+```
+:::
+:::
+
+-   Historically, most macroinvertebrate ecological knowledge is is drawn from family-level data sorted by hand.
+-   Species-level data from DNA metabarcoding suggests family-level data under-appreciates how macroinvertebrates will respond to changing landscapes.
+
+##  {.smaller}
+
+::: columns
+::: {.column width="45%"}
+### Skills
+
+-   Hierarchical linear modelling (RStan)
+-   Reproducible workflows
+-   R, SQL, Stan, Quarto
+-   Field sampling
+-   Macroinvertebate ID
+
+</br>
+
+### Other interests and work:
+
+-   Demonstrating (AGRI90075)
+-   Code clubs (QAEco, Burnley)
+:::
+
+::: {.column width="45%"}
+### Past experience
+
+-   Monash University
+
+    -   Undergraduate and Honours (Zoology)
+
+    -   Teaching assistant (Biology and Statistics)
+
+    -   Research Assistant (Field sampling, Macroinvertebrate ID)
+
+</br>
+
+-   Contract work (MJLC, Melbourne Water, Timberwolf Planting)
+
+    -   Wetland and Drainage channel maintenance
+
+    -   Revegetation, weed control and water quality monitoring
+:::
+:::

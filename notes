@@ -1,0 +1,53 @@
+1. Introduction to Quarto
+
+	•	What is Quarto?: Explain that Quarto is an open-source scientific and technical publishing system, built on top of Pandoc.
+	•	Why Use Quarto?: Highlight its flexibility for creating reproducible documents, integrating R, Python, and Julia code, and supporting multiple output formats (PDF, HTML, Word, etc.).
+	•	Comparison with Microsoft Office: .
+
+2. Getting Started with Quarto
+
+	•	Installation and Setup: Walk through installing Quarto and setting up the environment.
+	•	Creating Your First Document: Demonstrate how to create a simple Quarto document, explain the YAML header, and show how to render it into different formats.
+	•	Templates: Introduce Quarto templates specifically designed for thesis writing and academic presentations.
+
+3. Thesis Writing with Quarto
+
+	•	Structuring a Thesis: Show how to organize a thesis document with chapters, sections, and subsections.
+	•	Citations and References: Explain how to add citations using BibTeX or CSL files, manage references, and create bibliographies from Zotero.
+	•	Figures, Tables, and Code: Demonstrate how to include figures, tables, and executable code (R, Python, or Julia) in the thesis, with results automatically embedded in the document.
+	•	Cross-Referencing: Show how to cross-reference figures, tables, and sections within the document.
+
+4. Presentations with Quarto
+
+	•	Creating Presentations: Guide them through creating a Quarto presentation (e.g., PDF, HTML slides).
+	•	Slide Layouts and Themes: Discuss customizing slide layouts, themes, and adding speaker notes.
+	•	Interactive Content: Demonstrate how to add interactive elements like quizzes, code execution, or widgets.
+	•	Export Options: Show how to export presentations to different formats, including Beamer (LaTeX), reveal.js (HTML), and PowerPoint.
+
+5. Reproducible Research with Quarto
+
+	•	Version Control: Discuss integrating Quarto with Git for version control.
+	•	Parameterization: Introduce the concept of parameterized reports, where the same document can produce different outputs based on user-defined parameters.
+	•	Automation and Scripting: Show how to automate the rendering process using command-line options and scripts.
+
+6. Customizing and Extending Quarto
+
+	•	Custom Templates: Explain how to create and use custom templates for consistent formatting.
+	•	Extensions and Plugins: Highlight some popular Quarto extensions and plugins that can enhance functionality.
+	•	Advanced Formatting: Dive into advanced formatting options for styling text, code blocks, and more.
+
+7. Best Practices and Tips
+
+	•	Organizing Project Files: Share tips on organizing Quarto project files for large documents like theses.
+	•	Collaboration: Discuss collaborative writing using Quarto, possibly with version control or cloud platforms like GitHub.
+	•	Troubleshooting Common Issues: Provide solutions to common issues that students might encounter while using Quarto.
+
+8. Resources and Further Learning
+
+	•	Documentation and Tutorials: Point them to Quarto’s official documentation, tutorials, and community resources.
+	•	Sample Projects: Provide links to sample thesis projects and presentations built with Quarto.
+	•	Community and Support: Encourage joining Quarto’s online communities for support and ideas.
+
+9. Q&A Session
+
+	•	Open the floor for any questions the students might have.

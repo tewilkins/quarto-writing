@@ -1,0 +1,47 @@
+---
+title: "Simulation"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document.
+To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code.
+You can embed code like this:
+
+```{r}
+#| echo: true
+#| eval: true
+
+## vector of species:
+
+hist(iris$Sepal.Length)
+
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Control options
+
+Each chunk has executable options: <https://quarto.org/docs/computations/execution-options.html>
+
+| Option    | Description                                                                                                                                                                                       |
+|------------|------------------------------------------------------------|
+| `eval`    | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
+| `echo`    | Include the source code in output                                                                                                                                                                 |
+| `output`  | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto’s standard enclosing markdown). |
+| `warning` | Include warnings in the output.                                                                                                                                                                   |
+| `error`   | Include errors in the output (note that this implies that errors executing code will not halt processing of the document).                                                                        |
+| `include` | Catch all for preventing any output (code or results) from being included (e.g. `include: false` suppresses all output from the code block).                                                      |

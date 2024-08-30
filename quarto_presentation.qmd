@@ -1,0 +1,242 @@
+---
+title: "Writing and presenting research in Quarto"
+author: "Tom Wilkins"
+format: revealjs
+editor: visual
+---
+
+## What is Quarto? {.smaller}
+
+-   Open-source scientific and technical publishing software seated.
+
+-   Transforms R Studio into a word processor and slide presenter
+
+-   Enables you to weave together **written content** and **executable code** into a finished document or presentation.
+
+    -   Extension of R Markdown - writing blocks and code chunks
+
+## Why use Quarto? {.smaller}
+
+-   Manage your content, data analysis and reference management (e.g., Zotero)
+
+    -   Code and documentation developed in parallel
+
+    -   Reproducible results\*
+
+::: {.fragment .fade-in}
+-   Inter-operable with other coding languages (Python, Julia, C++, Stan)
+:::
+
+::: {.fragment .fade-in}
+-   Integrated Git-based workflow (see [happywithgitr.com](https://happygitwithr.com/))
+:::
+
+::: {.fragment .fade-in}
+::: columns
+::: {.column width="50%"}
+-   Open-source and accessible
+
+    -   Break dependence on vendor lock-in business models
+
+    -   Highest compatibility and functionality
+:::
+
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+![](https://imgs.xkcd.com/comics/scientific_paper_graph_quality.png){fig-align="center"}
+:::
+:::
+:::
+:::
+
+## 
+
+![](images/windows_panic.jpg){fig-align="center" width="1000"}
+
+## A side topic: reproducibility in Science
+
+::: fragment
+::: {#rep-figs layout="[30, 70]"}
+![](images/Sil_Uhl_title.png)
+
+![](images/Sil_Uhl_photo.png){width="600"}
+:::
+:::
+
+## 
+
+![](images/Sil_Uhl_figure.png){fig-align="center"}
+
+## 
+
+::: r-stack
+![](images/perkel.png){.fragment .semi-fade-out}
+
+![](https://imgs.xkcd.com/comics/code_lifespan.png){.fragment width="600"}
+:::
+
+## A side topic: reproducibility in Science {.smaller}
+
+Code is written for three people:
+
+1.  Your current self
+
+::: {.fragment .highlight-red}
+2.  Your future self
+
+3.  Other scientists
+:::
+
+::: {.fragment .fade-in}
+```{r}
+#| echo: true
+
+### REPRODUCIBILITY IN CODE FORM ###
+
+research <- NA        # Gap in the literature: research needs to be published!
+writing <- "clear"    # Author(s) wrote up their research manuscript nicely
+coding <- "clear"     # Author(s) made an effort to document and test their code 
+
+# Writing and coding serve the same purpose - communication with other scientists!
+
+if (writing == "clear" & coding == "clear"){
+  research <- "reproducible"
+}
+
+print(research)
+```
+:::
+
+## Quarto workflow {.smaller .center}
+
+::: columns
+::: {.column width="33%"}
+![](https://i.ibb.co/hsqz2sb/github-logo-7880-D80-B8-D-seeklogo-com.png){fig-align="center" width="200" height="200"}
+
+::: center
+**GitHub.com**
+:::
+
+::: {.fragment .smaller}
+-   Version control for code
+-   Quarto documents
+:::
+:::
+
+::: {.column width="33%"}
+![](https://i.ibb.co/stnbfJT/2758630.png){fig-align="center" width="200"}
+
+**Remote data and storage**
+
+::: fragment
+-   Database access
+-   Secure raw data
+:::
+:::
+
+::: {.column width="33%"}
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0OBjS0SqdKvrEh7SeEDLkai_XMJslRIVa5ahpdVCY-Oxvi_S_VE1209k3d83lCKI3mRk&usqp=CAU){fig-align="center" width="200"}
+
+**Zotero**
+
+::: fragment
+-   Reference management
+-   Web and desktop apps
+:::
+:::
+:::
+
+::: fragment
+::: columns
+::: {.column width="30%"}
+![](https://i.ibb.co/dLdfd0Y/key-arrow-right-icon-136476.png){fig-align="right" width="150"}
+:::
+
+::: {.column width="70%"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-align="left" width="400"}
+:::
+:::
+:::
+
+## Should you write your thesis in Quarto? {.smaller}
+
+Quarto was originally designed for technical reports - research papers and theses?
+
+::: columns
+::: {.column width="40%"}
+::: fragment
+-   Raw data
+
+-   Working data
+
+-   Analysis scripts
+
+-   Working data files
+
+-   Supplementary material
+
+-   Draft documents
+
+-   Literature reviews
+
+-   Chapters
+:::
+:::
+
+::: {.column width="60%"}
+::: {.fragment .fade-in}
+![](https://i.kym-cdn.com/photos/images/original/002/546/187/fb1.jpg){fig-align="center"}
+:::
+:::
+:::
+
+## Should you write your thesis in Quarto?
+
+</br>
+
+</br>
+
+```{mermaid}
+
+flowchart LR
+    A{Thesis} --> B(Chapter 1: Introduction)
+    B --> LC(Literature Review with supplementary meta analysis)
+    LC --> L[.Rproj]
+    L --> LQ[literature_review.qmd]
+    L --> MQ[meta_analysis.qmd]
+    L --> R[references.bib]
+    Z[Zotero] --> R
+    
+
+```
+
+## Should you write your thesis in Quarto?
+
+```{mermaid}
+
+flowchart LR
+    A{Thesis} --> C(Chapter 2: Data Chapter)
+    C --> M(Manuscript prepared with data handling,\n statistical modelling and \nother supplementary elements)
+    M --> MS[.Rproj]
+    MS --> MS1[data_cleaning.qmd]
+    MS --> MS2[model_fitting.qmd]
+    MS --> MS3[model_evaluation.qmd]
+    MS --> MS4[model_outputs.qmd]
+    MS --> MS5[manuscript.qmd]
+    MS --> R2[references.bib]
+    Z[Zotero] --> R2
+    
+
+```
+
+## Resources
+
+Quarto guide: <https://quarto.org/docs/guide/>
+
+Zotero: <https://www.zotero.org/>
+
+GitHub: <https://github.com/>
+
+Setting up R with git: <https://happygitwithr.com/>
+
+Tracking changes with docx: <https://openplantpathology.org/posts/2022-08-18-tracking-changes-from-rmdqmd-output-across-word-document-versions/>
